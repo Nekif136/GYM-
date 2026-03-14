@@ -5,10 +5,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Ultimate Gym | Fitness Training Center</title>
+<title>Best Gym in Agra | Ultimate Fitness Center</title>
 
-<meta name="description" content="Professional fitness center with expert trainers, advanced equipment and modern workout programs.">
-<meta name="keywords" content="gym, fitness center, bodybuilding gym, gym trainer, fitness training">
+<meta name="description" content="Best fitness gym in Agra with expert trainers, modern equipment and affordable membership plans.">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
@@ -75,7 +74,7 @@ text-align:center;
 /* HERO */
 
 .hero h1{
-font-size:70px;
+font-size:65px;
 background:linear-gradient(90deg,#ff4d00,#ffb300);
 -webkit-background-clip:text;
 color:transparent;
@@ -86,10 +85,8 @@ margin-top:20px;
 max-width:600px;
 }
 
-/* BUTTON */
-
 .btn{
-margin-top:30px;
+margin-top:25px;
 padding:14px 40px;
 border:none;
 background:#ff4d00;
@@ -127,76 +124,59 @@ transform:translateY(-10px) scale(1.05);
 background:#191919;
 }
 
+/* TRAINER IMAGE */
+
+.card img{
+width:100%;
+border-radius:10px;
+margin-bottom:15px;
+}
+
 /* PRICING */
 
 .price{
-font-size:42px;
+font-size:40px;
 color:#ff4d00;
 margin:20px 0;
 }
 
-/* GALLERY */
+/* CONTACT FORM */
 
-.gallery img{
-width:100%;
-border-radius:10px;
-}
-
-/* CHATBOT */
-
-.chatbot{
-position:fixed;
-bottom:20px;
-right:20px;
-width:300px;
-background:#111;
-border-radius:10px;
-overflow:hidden;
-display:none;
-}
-
-.chat-header{
-background:#ff4d00;
-padding:10px;
-font-weight:bold;
-}
-
-.chat-body{
-padding:10px;
-height:200px;
-overflow:auto;
-font-size:14px;
-}
-
-.chat-input{
+form{
 display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:30px;
+width:100%;
+max-width:400px;
 }
 
-.chat-input input{
-flex:1;
-padding:8px;
+form input{
+padding:12px;
+border-radius:8px;
 border:none;
 }
 
-.chat-input button{
-padding:8px 12px;
-border:none;
-background:#ff4d00;
-color:white;
+/* GALLERY CAROUSEL */
+
+.carousel{
+width:80%;
+max-width:700px;
+overflow:hidden;
+border-radius:10px;
+margin-top:40px;
 }
 
-.chat-toggle{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#ff4d00;
-border:none;
-padding:14px;
-border-radius:50%;
-cursor:pointer;
+.slides{
+display:flex;
+transition:0.5s;
 }
 
-/* WHATSAPP BUTTON */
+.slides img{
+width:100%;
+}
+
+/* WHATSAPP */
 
 .whatsapp{
 position:fixed;
@@ -209,6 +189,8 @@ text-decoration:none;
 color:white;
 font-weight:bold;
 }
+
+/* CANVAS */
 
 canvas{
 position:absolute;
@@ -243,10 +225,10 @@ display:none;
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
-<li><a href="#trainer">Trainer</a></li>
-<li><a href="#services">Services</a></li>
-<li><a href="#pricing">Pricing</a></li>
-<li><a href="#gallery">Equipments</a></li>
+<li><a href="#trainer">Trainers</a></li>
+<li><a href="#membership">Membership</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#reviews">Reviews</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 
@@ -254,15 +236,15 @@ display:none;
 
 <canvas id="bg"></canvas>
 
-<!-- HOME -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
 <h1>Transform Your Body</h1>
 
-<p>Join our professional gym with expert trainers, modern equipment and personalized fitness programs.</p>
+<p>Join the best gym in Agra with expert trainers and modern equipment.</p>
 
-<button class="btn">Join Now</button>
+<a href="#membership"><button class="btn">Join Now</button></a>
 
 </section>
 
@@ -272,7 +254,7 @@ display:none;
 
 <h1>About Our Gym</h1>
 
-<p>Ultimate Gym offers world class training, advanced equipment and professional coaches to help you reach your fitness goals.</p>
+<p>Ultimate Gym provides professional fitness training, modern workout equipment and certified trainers to help you achieve your fitness goals.</p>
 
 </section>
 
@@ -285,17 +267,20 @@ display:none;
 <div class="grid">
 
 <div class="card">
-<h3>John Smith</h3>
+<img src="https://images.unsplash.com/photo-1605296867424-35fc25c9212a">
+<h3>Rahul Sharma</h3>
 <p>Strength Coach</p>
 </div>
 
 <div class="card">
-<h3>David Lee</h3>
+<img src="https://images.unsplash.com/photo-1550345332-09e3ac987658">
+<h3>Amit Verma</h3>
 <p>Fitness Trainer</p>
 </div>
 
 <div class="card">
-<h3>Sarah Alex</h3>
+<img src="https://images.unsplash.com/photo-1599058917212-d750089bc07e">
+<h3>Pooja Singh</h3>
 <p>Yoga Trainer</p>
 </div>
 
@@ -303,54 +288,51 @@ display:none;
 
 </section>
 
-<!-- SERVICES -->
+<!-- MEMBERSHIP -->
 
-<section id="services">
-
-<h1>Our Services</h1>
-
-<div class="grid">
-
-<div class="card">
-<h3>Personal Training</h3>
-</div>
-
-<div class="card">
-<h3>Cardio Training</h3>
-</div>
-
-<div class="card">
-<h3>Body Building</h3>
-</div>
-
-</div>
-
-</section>
-
-<!-- PRICING -->
-
-<section id="pricing">
+<section id="membership">
 
 <h1>Membership Plans</h1>
 
 <div class="grid">
 
 <div class="card">
-<h3>Basic</h3>
+<h3>Monthly</h3>
 <div class="price">₹1500</div>
+<button class="btn">Join Now</button>
 </div>
 
 <div class="card">
-<h3>Standard</h3>
-<div class="price">₹3000</div>
+<h3>Quarterly</h3>
+<div class="price">₹4000</div>
+<button class="btn">Join Now</button>
 </div>
 
 <div class="card">
-<h3>Premium</h3>
-<div class="price">₹5000</div>
+<h3>Half Yearly</h3>
+<div class="price">₹7000</div>
+<button class="btn">Join Now</button>
+</div>
+
+<div class="card">
+<h3>Yearly</h3>
+<div class="price">₹12000</div>
+<button class="btn">Join Now</button>
 </div>
 
 </div>
+
+</section>
+
+<!-- UPI PAYMENT -->
+
+<section>
+
+<h1>Online Membership Payment</h1>
+
+<p>Scan the QR code and pay via UPI</p>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/UPI-QR.png" width="220">
 
 </section>
 
@@ -358,13 +340,47 @@ display:none;
 
 <section id="gallery">
 
-<h1>Gym Equipments</h1>
+<h1>Gym Gallery</h1>
 
-<div class="grid gallery">
+<div class="carousel">
+
+<div class="slides" id="slides">
 
 <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438">
 <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b">
 <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section id="reviews">
+
+<h1>Member Reviews</h1>
+
+<div class="grid">
+
+<div class="card">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Best gym in Agra with great trainers.</p>
+<h4>Rahul</h4>
+</div>
+
+<div class="card">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Amazing equipment and environment.</p>
+<h4>Amit</h4>
+</div>
+
+<div class="card">
+<p>⭐⭐⭐⭐⭐</p>
+<p>Lost 12kg in 4 months!</p>
+<h4>Priya</h4>
+</div>
 
 </div>
 
@@ -376,15 +392,21 @@ display:none;
 
 <h1>Contact Us</h1>
 
-<form>
+<form onsubmit="sendWhatsApp(); return false;">
 
-<input type="text" placeholder="Name" required>
-<input type="email" placeholder="Email" required>
-<input type="tel" placeholder="Phone">
+<input type="text" id="name" placeholder="Name" required>
+<input type="tel" id="phone" placeholder="Phone" required>
 
-<button class="btn">Submit</button>
+<button class="btn">Send</button>
 
 </form>
+
+<h2 style="margin-top:40px">Our Location</h2>
+
+<iframe 
+src="https://www.google.com/maps?q=agra+gym&output=embed"
+width="100%" height="300" style="border:0;border-radius:10px;margin-top:20px">
+</iframe>
 
 </section>
 
@@ -394,99 +416,57 @@ display:none;
 
 </footer>
 
-<!-- WHATSAPP -->
-
 <a class="whatsapp" href="https://wa.me/919999999999">WhatsApp</a>
-
-<!-- CHATBOT -->
-
-<button class="chat-toggle" onclick="toggleChat()">💬</button>
-
-<div class="chatbot" id="chat">
-
-<div class="chat-header">Gym Assistant</div>
-
-<div class="chat-body" id="chatBody">
-
-Hello! Ask about pricing, trainers or membership.
-
-</div>
-
-<div class="chat-input">
-
-<input id="chatInput" placeholder="Type message">
-
-<button onclick="sendMessage()">Send</button>
-
-</div>
-
-</div>
 
 <script>
 
-/* CHATBOT */
+/* CONTACT TO WHATSAPP */
 
-function toggleChat(){
+function sendWhatsApp(){
 
-let chat=document.getElementById("chat")
+let name=document.getElementById("name").value
+let phone=document.getElementById("phone").value
 
-chat.style.display=chat.style.display==="block"?"none":"block"
+let message=`New Gym Inquiry:%0AName: ${name}%0APhone: ${phone}`
 
-}
-
-function sendMessage(){
-
-let input=document.getElementById("chatInput")
-
-let body=document.getElementById("chatBody")
-
-let msg=input.value
-
-body.innerHTML+="<br><b>You:</b> "+msg
-
-if(msg.toLowerCase().includes("price"))
-
-body.innerHTML+="<br><b>Bot:</b> Membership starts at ₹1500"
-
-else if(msg.toLowerCase().includes("trainer"))
-
-body.innerHTML+="<br><b>Bot:</b> We have certified trainers available."
-
-else
-
-body.innerHTML+="<br><b>Bot:</b> Please contact us for more info."
-
-input.value=""
+window.open(`https://wa.me/919999999999?text=${message}`)
 
 }
 
-/* THREE JS 3D MODEL */
+/* GALLERY SLIDER */
+
+let slideIndex=0
+let slides=document.getElementById("slides")
+
+setInterval(()=>{
+slideIndex++
+if(slideIndex>2)slideIndex=0
+slides.style.transform=`translateX(-${slideIndex*100}%)`
+},3000)
+
+/* THREE JS BACKGROUND */
 
 const scene=new THREE.Scene()
-
 const camera=new THREE.PerspectiveCamera(75,window.innerWidth/window.innerHeight,0.1,1000)
 
 const renderer=new THREE.WebGLRenderer({canvas:document.querySelector('#bg')})
-
 renderer.setSize(window.innerWidth,window.innerHeight)
 
 camera.position.z=30
 
 const geometry=new THREE.BoxGeometry(10,5,5)
-
 const material=new THREE.MeshBasicMaterial({color:0xff4d00,wireframe:true})
 
-const equipment=new THREE.Mesh(geometry,material)
+const cube=new THREE.Mesh(geometry,material)
 
-scene.add(equipment)
+scene.add(cube)
 
 function animate(){
 
 requestAnimationFrame(animate)
 
-equipment.rotation.x+=0.01
-
-equipment.rotation.y+=0.01
+cube.rotation.x+=0.01
+cube.rotation.y+=0.01
 
 renderer.render(scene,camera)
 
